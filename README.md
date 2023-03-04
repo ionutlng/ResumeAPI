@@ -2,7 +2,7 @@
  
 This is a Python Flask application that presents a CV (resume) as a JSON REST API with endpoints for personal information, work experience, and education, as well as a user interface for viewing the data.
 
-## JSON REST API Installation and Usage
+## 1.JSON REST API Installation and Usage
 
 1. Clone the repository to your local machine:
 ```
@@ -33,7 +33,7 @@ The API responses are returned in JSON format.
 ## User Interface
 The user interface provides a simple way to view the CV data in a web browser. Each section is displayed on a separate page and includes formatted content with appropriate labels and headings.
 
-## CLI commands that prints the data to the console
+## 2. CLI commands that prints the data to the console Installation and Usage
 
 1. Activate the virtual environment from Scripts folder and change directory to ResumeAPI: 
 
