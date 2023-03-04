@@ -35,16 +35,16 @@ The user interface provides a simple way to view the CV data in a web browser. E
 
 ## CLI commands that prints the data to the console
 
-1. Activate the virtual environment from Scripts folder and change directory to ResumeAPI 
+1. Activate the virtual environment from Scripts folder and change directory to ResumeAPI: 
 
-   (Resources/activate_venv.PNG)
+   ![activate_venv](Resources/activate_venv.PNG)
 
-2. Set flask application to resume
+2. Set flask application to resume:
 ```
 set FLASK_APP=resume
 ```
 
-3. Run the application
+3. Run the application:
 ```
 flask json_data
 ```
