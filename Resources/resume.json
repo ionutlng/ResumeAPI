@@ -1,0 +1,69 @@
+{
+    "personal": {
+        "name": "Ionut Lungeanu",
+        "email": "ionut.lungeanu96@gmail.com",
+        "phone": "0755481683",
+        "location": "Iasi, Romania",
+      "summary": "Analytical Software Developer with 5-year background in software development."
+    },
+  "skills": [
+    {
+      "name": "Python",
+      "level": "Advanced"
+    },
+    {
+      "name": "Flask",
+      "level": "Advanced"
+    },
+    {
+      "name": "C++",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Java",
+      "level": "Advanced"
+    },
+    {
+      "name": "CSS",
+      "level": "Advanced"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate"
+    }
+  ],
+    "experience": [
+    {
+      "title": "Software Developer",
+      "company": "Vitesco",
+      "location": "Iasi",
+      "start_date": "2018-01-01",
+      "end_date": "2022-12-31",
+      "description": "Developed, maintained, tested and integrated software for Nissan and Renault engine control unit part. Developed internal tools using Python/Java/Matlab/C++ for tasks automation."
+    },
+    {
+      "title": "Intern",
+      "company": "XYZ Corp.",
+      "location": "Anytown USA",
+      "start_date": "2017-06-01",
+      "end_date": "2017-12-31",
+      "description": "Assisted senior developers with web application development."
+    }
+  ],
+   "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Universitatea \"Alexandru Ioan Cuza\"",
+      "location": "Iasi, Romania",
+      "start_date": "2015-09-01",
+      "end_date": "2018-05-31"
+    },
+     {
+      "degree": "Master of Science: Data Mining",
+      "institution": "Facultatea de Economie si Administrare a Afacerilor",
+      "location": "Iasi, Romania",
+      "start_date": "2018-05-31",
+      "end_date": "2020-05-31"
+    }
+  ]
+}

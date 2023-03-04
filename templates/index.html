@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			background-color: #f1f1f1;
+		}
+
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			margin: 40px 0 20px;
+			text-align: center;
+		}
+
+		section {
+			margin-bottom: 40px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			color: #1a1a1a;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+
+		li .label {
+			font-weight: bold;
+			display: inline-block;
+			width: 120px;
+			color: #777;
+		}
+
+		.skill-bar {
+			margin-bottom: 20px;
+			background-color: #ddd;
+			height: 20px;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+
+		.skill-bar .bar {
+			height: 100%;
+			background-color: #1a1a1a;
+			border-radius: 10px;
+			transition: width 1s ease-in-out;
+		}
+
+		@media (min-width: 768px) {
+			body {
+				font-size: 18px;
+			}
+
+			h1 {
+				font-size: 48px;
+			}
+
+			section {
+				padding: 40px;
+			}
+
+			h2 {
+				font-size: 30px;
+				margin-bottom: 30px;
+			}
+
+			li .label {
+				width: 180px;
+			}
+
+			.skill-bar {
+				height: 30px;
+				border-radius: 15px;
+			}
+
+			.skill-bar .bar {
+				border-radius: 15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>Resume</h1>
+
+	<section>
+		<h2>Personal Information</h2>
+		<ul>
+			<li><span class="label">Name:</span> {{ data.personal.name }}</li>
+			<li><span class="label">Email:</span> {{ data.personal.email }}</li>
+			<li><span class="label">Phone:</span> {{ data.personal.phone }}</li>
+			<li><span class="label">Address:</span> {{ data.personal.location }}</li>
+			<li><span class="label">Summary:</span> {{ data.personal.summary}}</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Skills</h2>
+		<ul>
+			{% for skill in data.skills %}
+				<li>{{ skill.name }} - {{ skill.level }}</li>
+			{% endfor %}
+		</ul>
+	</section>
+
+<section>
+	<h2>Experience</h2>
+	{% for job in data.experience %}
+	<h3>{{ job.title }} at {{ job.company }}</h3>
+	<ul>
+		<li><span class="label">Dates:</span> {{ job.start_date }} to {{ job.end_date }}</li>
+		<li><span class="label">Description:</span> {{ job.description }}</li>
+	</ul>
+	{% endfor %}
+</section>
+
+<section>
+		<h2>Education</h2>
+		{% for school in data.education %}
+			<h3>{{ school.degree }}</h3>
+			<ul>
+				<li><span class="label">Institution:</span> {{ school.institution }}</li>
+				<li><span class="label">Location:</span> {{ school.location }}</li>
+				<li><span class="label">Dates:</span> {{ school.start_date }} - {{ school.end_date }}</li>
+			</ul>
+		{% endfor %}
+	</section>
