@@ -26,7 +26,7 @@ def index():
     return render_template('index.html', data=cv_data)
 
 #Format output for CLI usage
-@app.cli.command()
+@app.cli.command('json_data')
 def print_json_data():
     for section, section_data in cv_data.items():
         print(f"\n{section.title()}:")
