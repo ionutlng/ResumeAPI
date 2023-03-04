@@ -37,11 +37,11 @@ def print_json_data():
         elif section == 'experience':
             for job in section_data:
                 print(
-                    f"{job['title']} at {job['company']}, {job['location']} ({job['start_date']} - {job['end_date']}):\n{job['description']}\n")
+                    f"{job['title']} at {job['company']}, {job['location']} from {job['start_date']} to {job['end_date']}:\n{job['description']}\n")
         elif section == 'education':
             for degree in section_data:
                 print(
-                    f"{degree['degree']} from {degree['institution']}, {degree['location']} ({degree['start_date']} - {degree['end_date']})")
+                    f"{degree['degree']} from {degree['institution']}, {degree['location']} from {degree['start_date']} to {degree['end_date']}")
         else:
             for key, value in section_data.items():
                 print(f"{key.title()}: {value}")
